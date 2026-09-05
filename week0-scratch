@@ -1,0 +1,21 @@
+Dodging Ball — CS50 Week 0 (Scratch)
+
+Live project: https://scratch.mit.edu/projects/1378341834/
+
+This was my first programming project, built from scratch without a template, and gave me hands on experience with loops, conditionals, variables, and custom blocks.
+
+How to play
+Use the arrow keys to move Avery and dodge the tennis ball. Lose all 5 health and it's game over.
+
+What it demonstrates
+- Sprites & scripts — two independent sprites (player and ball), each running multiple coordinated scripts
+- Loops — 'forever' loops driving continuous motion and the shooting cycle
+- Conditionals — collision detection ('if touching') tied to health loss and game-over logic
+- Variables — a 'Health' variable that updates live and ends the game at zero
+- Custom blocks — a 'Shoot' block that resets the ball's position, aims at the player, and fires it at a randomized speed
+- Broadcast or receive — message passing between sprites to trigger a hit reaction (color flash)
+- Randomness — random spawn height, random aim offset, and random speed per shot, tuned through playtesting so the game is genuinely dodgeable rather than either trivial or unfair
+
+Notes : Balancing this took a few iterations because the first version had the ball moving too fast and aiming too precisely, making it nearly impossible to dodge. Fixed by shrinking the ball, adding a random aim offset, slowing the top-end speed, and speeding up the player's movement.
+
+
